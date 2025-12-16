@@ -9,23 +9,54 @@ type FAQ = {
 const faqs: FAQ[] = [
   {
     id: 1,
-    question: "What is PitaB?",
+    question: "Is this tablet for learning?",
     answer:
-      "PitaB is a platform that helps you create beautiful landing pages with ease.",
+      "Yes. It runs a learning-focused OS with parental controls to limit distractions.",
   },
   {
     id: 2,
-    question: "Do I need coding experience?",
+    question: "Is the batch included with the tablet?",
     answer:
-      "No. You can build everything visually without writing a single line of code.",
+      "Yes. Batch access comes bundled with the tablet.",
   },
   {
     id: 3,
-    question: "Can I use my own domain name?",
+    question: "What learning is included?",
     answer:
-      "Yes, you can connect your custom domain easily from the settings.",
+      "Live classes, 1:1 mentor support, recordings, worksheets, tests, progress tracking, coding, Olympiad prep, and revision courses. Access depends on the selected batch.",
+  },
+  {
+    id: 4,
+    question: "Does the tablet support homework help?",
+    answer:
+      "Yes. Students can scan worksheets to get instant answers and clear explanations using AI-powered doubt solving.",
+  },
+  {
+    id: 5,
+    question: "Can my child use it offline?",
+    answer:
+      "Yes. Downloaded classes and content can be accessed offline.",
+  },
+  {
+    id: 6,
+    question: "How do parents control usage?",
+    answer:
+      "Parents can manage screen time, lock entertainment apps, control app access, and view weekly learning reports via the MDM Parental Control App.",
+  },
+  {
+    id: 7,
+    question: "Does the tablet support calling?",
+    answer:
+      "Yes. Calling is available with a SIM card.",
+  },
+  {
+    id: 8,
+    question: "Is the content updated regularly?",
+    answer:
+      "Yes. Courses, practice material, and learning features are updated regularly to stay aligned with the latest curriculum and exam patterns, based on the selected batch.",
   },
 ];
+
 
 const FaqSection: React.FC = () => {
   const [openId, setOpenId] = useState<number | null>(null);
